@@ -18,9 +18,7 @@ export interface ConfigData {
   static const char* LASTFM_APIKEY   = "${data.lastfmApiKey}";
   static const char* LASTFM_USERNAME = "${data.lastfmUsername}";
   
-  static const char* JPG_CONVERTER_URL         = "${data.jpgUrl}";
-  static const char* JPG_CONVERTER_URL_API_KEY = "${data.jpgApiKey}";
-  static const char* JPG_CONVERTER_BUCKET_HOST = "${data.jpgBucket}";
+  static const char* JPG_CONVERTER_API_KEY = "${data.jpgApiKey}";
   
   #endif`
   }

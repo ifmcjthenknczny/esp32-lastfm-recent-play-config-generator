@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import { ref, reactive } from 'vue'
+import { generateConfigHeader } from './configTemplate'
 
 const form = reactive({
   wifiSsid: '',
   wifiPassword: '',
   lastfmApiKey: '',
   lastfmUsername: '',
-  jpgUrl: '',
   jpgApiKey: '',
-  jpgBucket: ''
 })
 
 const status = ref<{ type: 'success' | 'error'; msg: string } | null>(null)
@@ -95,9 +94,7 @@ const inputClass = "w-full px-4 py-2 border border-slate-300 rounded-lg focus:ri
             <p className="text-sm text-slate-500">Ustawienia dla własnego serwera okładek.</p>
           </div>
           <div className="md:col-span-2 space-y-4">
-            <input v-model="form.jpgUrl" placeholder="Converter URL" :class="inputClass" />
             <input v-model="form.jpgApiKey" placeholder="Converter API Key" :class="inputClass" />
-            <input v-model="form.jpgBucket" placeholder="Bucket Host" :class="inputClass" />
           </div>
         </section>
       </div>

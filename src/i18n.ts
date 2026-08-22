@@ -12,16 +12,14 @@ const messages = {
     },
     lastfm: {
       title: '2. Last.fm API',
-      desc: 'Pobierz klucz na',
+      desc: 'Pobierz klucz na {link}',
       apiKey: 'API Key',
       username: 'Nazwa użytkownika',
     },
     converter: {
       title: '3. Konwerter (Opcjonalne)',
       desc: 'Ustawienia dla własnego serwera okładek.',
-      url: 'Converter URL',
-      apiKey: 'Converter API Key',
-      bucket: 'Bucket Host',
+      apiKey: 'API Key konwertera JPG',
     },
     status: {
       saved: 'Zapisano plik na dysku.',
@@ -41,16 +39,14 @@ const messages = {
     },
     lastfm: {
       title: '2. Last.fm API',
-      desc: 'Get your key at',
+      desc: 'Get your key at {link}',
       apiKey: 'API Key',
       username: 'Username',
     },
     converter: {
       title: '3. Converter (Optional)',
       desc: 'Settings for custom cover server.',
-      url: 'Converter URL',
       apiKey: 'Converter API Key',
-      bucket: 'Bucket Host',
     },
     status: {
       saved: 'File saved to disk.',

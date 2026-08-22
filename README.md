@@ -1,48 +1,82 @@
-# config-generator
+# Config Generator for ESP32
 
-This template should help get you started developing with Vue 3 in Vite.
+A lightweight web interface designed to generate `config.h` and optional `converter.h` header files for C/C++ ESP32 embedded project that shows currently playing song - [available here](https://github.com/ifmcjthenknczny/esp32-lastfm-recent-play). Built with Vue 3, Vite, Tailwind CSS, and `vue-i18n`.
 
-## Recommended IDE Setup
+---
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🚀 Features
 
-## Recommended Browser Setup
+* **Instant Header Generation:** Creates formatted `.h` files directly in your browser.
+* **Native File System API Integration:** Saves files directly to your local drive using `showSaveFilePicker` with a graceful download fallback for unsupported browsers.
+* **Internationalization (i18n):** Multi-language support (English and Polish) powered by `vue-i18n`.
+* **Optional Converter Setup:** Automatically exports an additional `converter.h` header when a JPG converter API key is specified.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+---
 
-## Type Support for `.vue` Imports in TS
+## 🛠️ Tech Stack
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+* **Framework:** [Vue 3](https://vuejs.org/) (Composition API with `<script setup lang="ts">`)
+* **Build Tool:** [Vite](https://www.google.com/search?q=https://vitejs.dev/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Localization:** [vue-i18n](https://vue-i18n.intlify.dev/)
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 💻 Getting Started
 
-## Project Setup
+### Prerequisites
 
-```sh
-npm install
+* [Node.js](https://nodejs.org/) (version 18+ recommended)
+* `npm`, `pnpm`, or `yarn`
+
+### Installation
+
+1. **Clone the repository:**
+```bash
+git clone https://github.com/your-username/config-generator.git
+cd config-generator
+
 ```
 
-### Compile and Hot-Reload for Development
 
-```sh
-npm run dev
+2. **Install dependencies:**
+```bash
+yarn
+
 ```
 
-### Type-Check, Compile and Minify for Production
 
-```sh
-npm run build
+3. **Start the development server:**
+```bash
+yarn dev
+
 ```
 
-### Lint with [ESLint](https://eslint.org/)
 
-```sh
-npm run lint
+4. **Build for production:**
+```bash
+yarn build
+
 ```
+
+---
+
+## 🌐 Localization Configuration
+
+Translation keys are managed via `vue-i18n` in `src/i18n.ts`. Supported locales:
+
+| Code | Language | Default |
+| --- | --- | --- |
+| `pl` | Polish | Yes |
+| `en` | English | Fallback |
+
+## License
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/).
+
+## Contact
+
+For questions or feedback, please reach out via GitHub.
+[ifmcjthenknczny](https://github.com/ifmcjthenknczny)  
+
+Project Link: [https://github.com/ifmcjthenknczny/esp32-lastfm-recent-play-config-generator](https://github.com/ifmcjthenknczny/esp32-lastfm-recent-play-config-generator)

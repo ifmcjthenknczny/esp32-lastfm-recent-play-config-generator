@@ -13,13 +13,13 @@ const messages = {
     lastfm: {
       title: '2. Last.fm API',
       desc: 'Pobierz klucz na {link}',
-      apiKey: 'API Key',
+      apiKey: 'Klucz API',
       username: 'Nazwa użytkownika',
     },
     converter: {
       title: '3. Konwerter (Opcjonalne)',
       desc: 'Ustawienia dla własnego serwera okładek.',
-      apiKey: 'API Key konwertera JPG',
+      apiKey: 'Klucz API konwertera JPG',
     },
     status: {
       saved: 'Zapisano plik na dysku.',
